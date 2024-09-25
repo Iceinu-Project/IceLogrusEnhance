@@ -4,7 +4,15 @@
 
 Encapsulates some widgets to enhance/improve the Logrus experience.
 
-## GORM logger Converter
+## Install 安装
+
+```shell
+go get -u github.com/Iceinu-Project/IceLogrusEnhance
+```
+
+## Usage 用法
+
+### GORM logger Converter
 
 将Logrus的logger实例转换为gorm可用的logger实例
 
