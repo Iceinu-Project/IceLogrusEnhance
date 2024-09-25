@@ -56,7 +56,7 @@ func (g *GormLogrusLogger) Trace(ctx context.Context, begin time.Time, fc func()
 			"rows":    rows,
 			"sql":     sql,
 			"elapsed": elapsed,
-		}).Info("Gorm Trace")
+		}).Trace("Gorm Trace")
 	}
 }
 
