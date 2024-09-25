@@ -22,7 +22,8 @@ Convert a logger instance from Logrus to a logger instance that can be used by g
 import "github.com/Iceinu-Project/IceLogrusEnhance"
 
 func main() {
-    gormLogger := icelogrus.NewGormLogrusLogger(logrus.New()) 
+    gormLogger := icelogrus.NewGormLogrusLogger(logrus.New())
+    gormLogger.LogMode(logger.Info)
     db, err := gorm.Open(sqlite.Open("iceinu.db"), &gorm.Config{
         Logger: gormLogger,
     })
